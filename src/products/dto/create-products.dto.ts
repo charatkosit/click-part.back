@@ -14,6 +14,7 @@ export class CreateProductsDto {
   Wide          : number;
   Long          : number;
   High          : number;
+  Cat_Id        : number;
 
   constructor(partial: Partial<CreateProductsDto>) {
     // Use correct argument name

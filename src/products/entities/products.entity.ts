@@ -40,6 +40,9 @@ export class Products {
 
     @Column() // ความสูง
     High : number;
+
+    @Column() //catid
+    Cat_Id
   
   
 }  

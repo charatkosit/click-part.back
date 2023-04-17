@@ -17,4 +17,5 @@ export class UpdateProductsDto extends PartialType(CreateProductsDto) {
     Wide          : number;
     Long          : number;
     High          : number;
+    Cat_Id        : number;
 }
