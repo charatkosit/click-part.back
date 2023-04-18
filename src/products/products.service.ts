@@ -40,12 +40,13 @@ async create(createProductsDto: CreateProductsDto): Promise<Products> {
   product.Wide = createProductsDto.Wide;
   product.Long = createProductsDto.Long;
   product.High = createProductsDto.High;
+  product.Cat_Id = createProductsDto.Cat_Id;
 
 
   // save product to database
  return await this.ProductsRepository.save(product);
 
-  // return the created product
+  // return the created product  
 
 }
 
