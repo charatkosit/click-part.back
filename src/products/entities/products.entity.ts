@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Double, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('Products')
 export class Products {
@@ -42,7 +42,7 @@ export class Products {
     High : number;
 
     @Column() //catid
-    Cat_Id
+    Cat_Id : number;
   
   
 }  

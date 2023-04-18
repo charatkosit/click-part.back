@@ -21,5 +21,6 @@ export class Users {
   @Column({default: 'member'})
   Permission: string;
 
+
 }
 

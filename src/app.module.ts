@@ -31,11 +31,11 @@ import { UsersController } from './users/users.controller';
     TypeOrmModule.forRoot(typeOrmConfig),
     UsersModule,
     HttpModule,
-    AuthModule,
-    UsersModule,
-    ProductsModule
+    AuthModule
+    
+    
   ],
-  controllers: [AddressesController, OrdersController, AppController,ProductsController,UsersController],
+  controllers: [],
   providers: [AppService],
 })
 export class AppModule {}

@@ -1,6 +1,10 @@
-import { Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('Categories')
 export class CategoriesEntity {
-    @PrimaryGeneratedColumn() id:string;
+    @PrimaryGeneratedColumn() 
+    Id:         number;
+
+    @Column()
+    titel:      string;
 }
