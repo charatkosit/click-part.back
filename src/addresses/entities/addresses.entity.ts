@@ -28,7 +28,7 @@ export class Addresses {
 
     @Column ()
     Phone:      string; 
-
+  
     @Column ()
     Pincode:    string; 
 
@@ -36,3 +36,15 @@ export class Addresses {
     User_Id:    string; 
 
 }
+/*
+Name_recipient :      string;
+Line1:      string;
+Line2:      string; 
+City:       string; 
+State:      string;
+Street:     string;  
+Country:    string; 
+Phone:      string; 
+Pincode:    string; 
+User_Id:    string; 
+*/

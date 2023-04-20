@@ -5,7 +5,7 @@ import { CreateOrdersDeteilsDto } from './create-orders-deteils.dto';
 
 export class UpdateOrdersDeteilsDto extends PartialType(CreateOrdersDeteilsDto) {
    
-    id :            string;
+
     Order_Id:       number;
     Products_Id:    number;
     Quantity:       number;

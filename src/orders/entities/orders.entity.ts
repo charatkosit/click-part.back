@@ -2,7 +2,7 @@ import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('Orders')
-export class OrdersEntity {
+export class Orders {
     @PrimaryGeneratedColumn()
     Id:             number;
 

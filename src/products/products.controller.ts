@@ -8,8 +8,8 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import * as csvParser from 'csv-parser';
 import * as mysql from 'mysql2/promise';
 
-@Controller(
-  {
+@Controller( 
+  {  
     version: '1',
     path: 'products'
   }

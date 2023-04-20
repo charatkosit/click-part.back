@@ -1,13 +1,12 @@
-import { OrdersDeteilsService } from './orders-deteils.service';
 import { OrdersDeteilsController } from './orders-deteils.controller';
-/*
-https://docs.nestjs.com/modules
-*/
-
+import { OrdersDeteils} from './entities/orders-deteils.entity';
+import { OrdersDeteilsService } from './orders-deteils.service';
 import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+
 
 @Module({
-  imports: [],
+  imports: [TypeOrmModule.forFeature([OrdersDeteils])],
   controllers: [OrdersDeteilsController],
   providers: [OrdersDeteilsService],
 })

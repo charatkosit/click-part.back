@@ -2,7 +2,7 @@
 import { IsNotEmpty } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export class CreateOrdersDeteilsDto {
-  id :            string;
+
   Order_Id:       number;
   Products_Id:    number;
   Quantity:       number;

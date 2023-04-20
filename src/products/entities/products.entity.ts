@@ -1,7 +1,12 @@
-import { Column, Double, Entity, PrimaryGeneratedColumn } from 'typeorm';
+
+import { Categories } from 'src/categories/entities/categories.entity';
+import { Column, Double, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('Products')
 export class Products {
+
+
+
     @PrimaryGeneratedColumn()
     ProductsId: number;
   
@@ -42,7 +47,7 @@ export class Products {
     High : number;
 
     @Column() //catid
-    Cat_Id : number;
+    Cat_Id: number;
   
   
 }  

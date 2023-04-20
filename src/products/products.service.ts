@@ -1,3 +1,4 @@
+import { Categories } from 'src/categories/entities/categories.entity';
 /*
 https://docs.nestjs.com/providers#services
 */
@@ -9,10 +10,8 @@ import { UpdateProductsDto } from './dto/update-products.dto';
 import { UploadProductsDto } from './dto/upload-products.dto';
 import { DeleteResult, UpdateResult } from 'typeorm';
 import { Repository } from 'typeorm/repository/Repository';
-import * as XLSX from 'xlsx';
-import * as fs from 'fs';
-import * as csvParser from 'csv-parser';
-import * as mysql from 'mysql2/promise';
+
+
 
 
 
@@ -26,6 +25,7 @@ export class ProductsService {
   }
 async create(createProductsDto: CreateProductsDto): Promise<Products> {
   const product = new Products();
+  
 
   // set product properties from DTO
   product.ProductsName = createProductsDto.ProductsName;
@@ -41,6 +41,7 @@ async create(createProductsDto: CreateProductsDto): Promise<Products> {
   product.Long = createProductsDto.Long;
   product.High = createProductsDto.High;
   product.Cat_Id = createProductsDto.Cat_Id;
+
 
 
   // save product to database

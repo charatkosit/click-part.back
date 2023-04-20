@@ -16,6 +16,8 @@ export class CreateProductsDto {
   High          : number;
   Cat_Id        : number;
 
+    
+
   constructor(partial: Partial<CreateProductsDto>) {
     // Use correct argument name
     Object.assign(this, partial); // Assign object properties from partial to this
