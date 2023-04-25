@@ -5,8 +5,6 @@ import { Products } from './products/entities/products.entity';
 import { AddressesModule } from './addresses/addresses.module';
 import { AddressesController } from './addresses/addresses.controller';
 import { CategoriesModule } from './categories/categories.module';
-import { OrdersDeteilsModule } from './oders_deteils/orders-deteils.module';
-import { OrdersModule } from './orders/orders.module';
 
 
 /* eslint-disable prettier/prettier */
@@ -27,8 +25,6 @@ import { UsersController } from './users/users.controller';
   imports: [
     AddressesModule,
     CategoriesModule,
-    OrdersDeteilsModule,
-    OrdersModule,
     ProductsModule,
     TypeOrmModule.forRoot(typeOrmConfig),
     UsersModule,
