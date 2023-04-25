@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Users } from 'src/users/entities/users.entity';
 import { Products } from './products/entities/products.entity';
 import { AddressesModule } from './addresses/addresses.module';
@@ -5,7 +7,7 @@ import { AddressesController } from './addresses/addresses.controller';
 import { CategoriesModule } from './categories/categories.module';
 import { OrdersDeteilsModule } from './oders_deteils/orders-deteils.module';
 import { OrdersModule } from './orders/orders.module';
-import { OrdersController } from './orders/orders.controller';
+
 
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
